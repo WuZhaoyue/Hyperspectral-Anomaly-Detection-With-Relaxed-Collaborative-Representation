@@ -21,10 +21,10 @@ data_number=1;
 %%%%% Point of the curve is selected as the first cluster radius.
 %%%%% The second cluster radius can be set as 0.2 empirically.
 
-% k_dist(data2D, b);
-% bandwidth1=input('Please enter the first cluster radius£º');
+k_dist(data2D, b);
+bandwidth1=input('Please enter the first cluster radiusÂ£Âº');
 
-bandwidth1=1;
+% bandwidth1=0.5;
 bandwidth2=0.2;
 [Dic, TrSpe]=Dic_built(data2D, bandwidth1,bandwidth2 );
 fprintf('a=%f',size(Dic, 2))
@@ -39,7 +39,7 @@ fprintf('a=%f',size(Dic, 2))
 %%%%% number of atoms in the "Dic"
 
 k=10;
-lambda=[1e-4];
+lambda=[1];
 tau=[1e2];
 gamma=[1e2];
 
