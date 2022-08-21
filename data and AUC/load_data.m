@@ -1,11 +1,11 @@
 function [data, data_o, data2D, data2D_o, M,  m, n,b, mask]=load_data(data_number)
 switch data_number
     case 1
-        load dataHYDICE
-        data_o=DataTest2;
-        data=DataTest2;
+        load 'dataPavia'
+        data_o=PaviaCenter;
+        data=PaviaCenter;
         [data2D, data2D_o, M,m, n,b, data]=generalization(data);
-        load maskHYDICE;
+        load 'maskPavia'
         mask = reshape(mask, 1, M);
 end
 end
