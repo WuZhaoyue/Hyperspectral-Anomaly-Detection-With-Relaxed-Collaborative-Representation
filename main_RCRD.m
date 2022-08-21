@@ -22,7 +22,7 @@ data_number=1;
 %%%%% The second cluster radius can be set as 0.2 empirically.
 
 k_dist(data2D, b);
-bandwidth1=input('Please enter the first cluster radius£º');
+bandwidth1=input('Please enter the first cluster radius');
 
 % bandwidth1=0.5;
 bandwidth2=0.2;
